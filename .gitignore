@@ -1,0 +1,59 @@
+# Frontend
+otams-frontend/node_modules/
+otams-frontend/dist/
+otams-frontend/dist-ssr/
+otams-frontend/.env
+otams-frontend/.pnp*
+otams-frontend/.eslintcache
+otams-frontend/yarn-error.log
+otams-frontend/pnpm-debug.log*
+otams-frontend/lerna-debug.log*
+otams-frontend/*.local
+otams-frontend/package-lock.json
+
+# Backend
+server/Otams.Api/bin/
+server/Otams.Api/obj/
+server/Otams.Api/.vs/
+server/Otams.Api/*.user
+server/Otams.Api/*.suo
+server/Otams.Api/appsettings.Development.json
+server/Otams.Api/appsettings.Local.json
+server/Otams.Api/appsettings.*.json
+
+# DATABASE / MIGRATIONS 
+*.mdf
+*.ldf
+*.db
+*.bak
+*.sql
+
+# LOG FILES 
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# SYSTEM / EDITOR 
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.sw?
+*.tmp
+*.ntvs*
+*.njsproj
+*.sln.docstates
+
+# ENVIRONMENT CONFIGS
+.env
+.env.local
+.env.*.local
+
+# OS / MISC
+*.local
+*.orig
