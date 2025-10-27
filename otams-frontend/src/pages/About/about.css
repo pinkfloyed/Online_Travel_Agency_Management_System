@@ -1,0 +1,62 @@
+.about-container {
+  font-family: 'Arial', sans-serif;
+  color: #b68a8a;
+}
+
+.about-hero {
+  background-color: #767173;
+  color: rgb(16, 16, 16);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.about-card {
+  background-color: #f7f9fc;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.about-card h2 {
+  color: #004aad;
+  margin-bottom: 15px;
+}
+
+.about-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  margin-top: 50px;
+}
