@@ -1,0 +1,290 @@
+/* General Page Layout */
+.bookings-page {
+  padding: 30px 20px;
+  max-width: 2000px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: #dae0f3;
+  min-height: 100vh;
+}
+
+.bookings-page h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #004aad;
+}
+
+/* Bookings Grid */
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Booking Card */
+.booking-card {
+  border-radius: 12px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.booking-card h3 {
+  margin-top: 0;
+  color: #004aad;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.booking-card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Card Buttons */
+.booking-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.view-btn,
+.submit-btn {
+  flex: 1;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.view-btn {
+  background-color: #28a745; /* green for edit */
+  color: white;
+}
+.view-btn:hover {
+  background-color: #45c767;
+  transform: translateY(-2px);
+}
+
+.submit-btn {
+  background-color: #dc3545; /* red for cancel */
+  color: white;
+}
+.submit-btn:hover {
+  background-color: #e85c6d;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .bookings-grid {
+    grid-template-columns: 1fr;
+  }
+  .booking-actions {
+    flex-direction: column;
+  }
+}
+
+
+/* Edit Booking Form Page */
+.booking-form-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.booking-form-page h1 {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+/* Form Styling */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #004aad;
+}
+
+.booking-form input,
+.booking-form textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  border-color: #0066ff;
+  outline: none;
+}
+
+/* Buttons */
+.submit-btn {
+  background-color: #004aad;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #0066ff;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .booking-form-page {
+    padding: 20px 15px;
+  }
+}
+
+.admin-bookings-page {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+  min-height: 100vh;
+}
+
+.page-title {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 1.5rem;
+}
+
+.booking-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border-top: 4px solid transparent;
+}
+
+.booking-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-badge {
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-badge.pending {
+  background-color: #ffeaa7;
+  color: #d17b00;
+}
+
+.status-badge.confirmed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.booking-info p {
+  margin: 0.4rem 0;
+  color: #444;
+}
+
+.booking-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-select {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+}
+
+.view-btn,
+.delete-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.view-btn {
+  background: #004aad;
+  color: white;
+}
+
+.view-btn:hover {
+  background: #003780;
+}
+
+.delete-btn {
+  background: #ff5c5c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #e63946;
+}
+
+.loading-text,
+.empty-text {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 3rem;
+}
