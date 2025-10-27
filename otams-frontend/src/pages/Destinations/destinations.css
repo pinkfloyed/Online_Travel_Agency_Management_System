@@ -1,0 +1,330 @@
+/* 🌎 General Page Styles */
+.destinations-page {
+  padding: 40px;
+  background: linear-gradient(135deg, #f8fbff, #eef5ff);
+  text-align: center;
+  min-height: 100vh;
+}
+
+.page-title {
+  color: #004aad;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* ➕ Create Button */
+.create-btn {
+  background: linear-gradient(90deg, #28a745, #34c759);
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.create-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #23b14d, #1e9b43);
+}
+
+/* 🧭 Destination Grid */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+/* 🏞️ Destination Card */
+.destination-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 18px;
+  width: 340px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.destination-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.destination-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.destination-card h3 {
+  color: #004aad;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.destination-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* 🛠️ Admin Buttons */
+.admin-actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.view-btn,
+.edit-btn,
+.delete-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.view-btn {
+  background: #004aad;
+}
+.view-btn:hover {
+  background: #003a88;
+}
+
+.edit-btn {
+  background: #23b14d;
+}
+.edit-btn:hover {
+  background: #1e9b43;
+}
+
+.delete-btn {
+  background: #e53935;
+}
+.delete-btn:hover {
+  background: #c62828;
+}
+
+/* ✍️ Create/Edit Destination Form */
+.destination-form {
+  background: #8aeca9;
+  padding: 40px;
+  border-radius: 14px;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.destination-form h1 {
+  color: #004aad;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.destination-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.destination-form input,
+.destination-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.destination-form input:focus,
+.destination-form textarea:focus {
+  border-color: #004aad;
+  box-shadow: 0 0 6px rgba(0, 74, 173, 0.2);
+}
+
+.destination-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.destination-form input[type="file"] {
+  background: #f7faff;
+  border: 1px dashed #004aad;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Submit Button */
+.submit-btn {
+  background: linear-gradient(90deg, #004aad, #006eff);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+.submit-btn:hover {
+  background: linear-gradient(90deg, #003c8f, #005ce6);
+  transform: translateY(-2px);
+}
+
+/* 🖼️ Image Row */
+.images-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.images-row img {
+  width: 250px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+}
+.images-row img:hover {
+  transform: scale(1.05);
+  border: 2px solid #004aad;
+}
+
+/* 🧾 Destination Details Page */
+.destination-details {
+  background: #fff;
+  max-width: 850px;
+  margin: 50px auto;
+  border-radius: 14px;
+  padding: 35px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.destination-details h1 {
+  color: #004aad;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.destination-details p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.destination-details strong {
+  color: #004aad;
+}
+
+.destination-details .images-row img {
+  width: 180px;
+  height: 120px;
+}
+.destinations-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.destination-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+
+.destination-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.destination-info {
+  padding: 15px;
+}
+
+.destination-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #004aad;
+}
+
+.destination-info p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.view-button {
+  display: inline-block;
+  margin-top: 10px;
+  background: #ff7f50;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.view-button:hover {
+  background: #ff5722;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.button-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.back-btn, .edit-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+}
+
+.back-btn {
+  background: #777;
+}
+.back-btn:hover {
+  background: #555;
+}
+
+.edit-btn {
+  background: #2196f3;
+}
+.edit-btn:hover {
+  background: #1976d2;
+}
